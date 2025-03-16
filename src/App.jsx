@@ -1,12 +1,12 @@
-import { useState } from 'react'
+import { IoIosHome } from "react-icons/io";
+
 function App() {
+ 
+
   return (
     <>
-      <div className="bg-blue-300">
-        <h1 className="text-sky-500">
-          hello Learn Lab Developers
-        </h1>
-      </div>
+       <p className='bg-purple text-black font-bold flex '>
+      <span className=""> <IoIosHome /></span><span className="px-4">Hello</span> </p>
     </>
   )
 }
