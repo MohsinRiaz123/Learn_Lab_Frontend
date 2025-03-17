@@ -1,4 +1,5 @@
 
+import LandingFooter from "./Components/LandingFooter";
 import LandingNavbar from "./Components/LandingNavbar";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
     <div className="font-montserrat">
     <LandingNavbar/>
+    <LandingFooter/>
     </div>
    </>
   )
