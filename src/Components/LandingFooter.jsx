@@ -48,7 +48,7 @@ const LandingFooter = () => {
           <a href="/" className=" hover:text-white">
             Contact Us
           </a>
-          <a href="/" className=" hover:text-white">
+          <a href="/about" className=" hover:text-white">
             About
           </a>
           <a href="/" className=" hover:text-white">

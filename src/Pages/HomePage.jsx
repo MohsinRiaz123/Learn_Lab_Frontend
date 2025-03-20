@@ -103,7 +103,7 @@ const HomePage = () => {
   return (
     <div>
       <LandingNavbar />
-      <div className=" space-y-20">
+      <div className=" space-y-15">
         <div className=" mx-20 flex justify-around ">
           <div className="flex flex-col justify-center  space-y-5 p-24 w-1/2">
             <p className="text-5xl  ">
@@ -131,7 +131,15 @@ const HomePage = () => {
             <img src="./src/assets/Images/Banner.png" alt="image" />
           </div>
         </div>
+        {/* <_____________________Running Counters____________________> */}
 
+        <div className="bg-purple p-10 rounded-2xl flex justify-around items-center max-w-7xl mx-auto shadow-lg shadow-blue ">
+          {stats.map((stat, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <AnimatedCounter value={stat.value} label={stat.label} />
+            </div>
+          ))}
+        </div>
         {/* <_____________________Thousands of  Courses____________________> */}
 
         <div className="flex justify-around ">
@@ -180,15 +188,6 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* <_____________________Running Counters____________________> */}
-
-        <div className="bg-purple p-10 rounded-2xl flex justify-around items-center max-w-7xl mx-auto shadow-lg shadow-blue ">
-          {stats.map((stat, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <AnimatedCounter value={stat.value} label={stat.label} />
-            </div>
-          ))}
-        </div>
         {/* <_____________________How We Start____________________> */}
         <div className="relative bg-blue">
           <div className="pt-20 pb-60  flex flex-col items-center justify-center space-y-6 ">
