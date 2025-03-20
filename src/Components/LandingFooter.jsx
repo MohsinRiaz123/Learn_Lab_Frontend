@@ -7,7 +7,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaGraduationCap } from "react-icons/fa6";
 const LandingFooter = () => {
   return (
-    <div className="fixed bottom-0">
+    <div className=" ">
     <div className=" text-gray-500 font-semibold  space-x-14 space-y-18 bg-blue md:grid grid-cols-2 lg:grid-cols-4 p-14 ">
       <div className="">
         <div className="flex items-center">
@@ -20,11 +20,10 @@ const LandingFooter = () => {
           </div>
         </div>
         <p className="mt-8">
-          when an unknown printer took galley of type and scrambled it to make
-          pspecimen bookt has.
+        Access high-quality courses from expert instructors and upgrade your skills at your own pace.
         </p>
-        <p className="mt-4">463 7th Ave, NY 10018, USA</p>
-        <p className="mt-4">+123 88 9900 456</p>
+        <p className="mt-4">Lahore, Pakistan</p>
+        <p className="mt-4">+92 300 1672003</p>
       </div>
       <div>
         <p className="text-white text-xl">Useful Links</p>
@@ -61,7 +60,7 @@ const LandingFooter = () => {
         <p className="text-white text-xl">Get In Touch</p>
         <div className="bg-purple h-1 w-8 rounded-full mt-3"></div>
         <div className=" mt-4  ">
-          <p>when an unknown printer took galley type and scrambled</p>
+          <p>Have questions or need assistance? Reach out to us we're here to help</p>
           <div className="flex space-x-3 mt-4">
             <a href="/" className=" hover:text-white text-xl">
               <FaFacebookF />

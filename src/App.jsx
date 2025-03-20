@@ -1,18 +1,14 @@
 
-import LandingFooter from "./Components/LandingFooter";
-import LandingNavbar from "./Components/LandingNavbar";
+import HomePage from "./Pages/HomePage";
 
 function App() {
- 
-
   return (
     <>
-    <div className="font-montserrat">
-    <LandingNavbar/>
-    <LandingFooter/>
-    </div>
-   </>
-  )
+      <div className="font-montserrat">
+        <HomePage />
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;

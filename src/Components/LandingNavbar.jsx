@@ -17,8 +17,8 @@ const LandingNavbar = () => {
      <a href='/contactUs' className='hover:text-purple hover:underline'>Contact Us</a>
     </div>
     <div className='flex space-x-6 font-semibold'>
-      <a href='/login' className=' border-2 border-yellow bg-yellow hover:bg-purple hover:border-purple hover:text-white   px-6 py-3 rounded-full'>Log in</a>
-      <a href='/signUp' className='border-2 border-yellow hover:bg-purple v hover:border-purple hover:text-white   px-5 py-3 rounded-full'>Sign up</a>
+      <a href='/login' className=' border-2 border-yellow bg-yellow hover:bg-purple hover:border-purple hover:text-white   px-6 py-3 rounded-full transition delay-100 duration-150 ease-in-out hover:-translate-y-1 hover:scale-100'>Log in</a>
+      <a href='/signUp' className='border-2 border-yellow hover:bg-purple v hover:border-purple hover:text-white   px-5 py-3 rounded-full transition delay-100 duration-150 ease-in-out hover:-translate-y-1 hover:scale-100'>Sign up</a>
     </div>
   </div>
   )
