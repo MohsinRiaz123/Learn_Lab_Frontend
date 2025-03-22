@@ -158,13 +158,13 @@ const AboutUS = () => {
               What Students Think and Say
             </div>
             <div className=" font-bold text-4xl">About LearnLab</div>
-            <div className="mt-6 relative max-w-6xl mx-auto px-8">
+            <div className="mt-6 relative max-w-6xl mx-auto px-20">
               <Swiper
                 modules={[Navigation, Autoplay]}
                 slidesPerView={3}
                 spaceBetween={20}
                 loop={true}
-                autoplay={{ delay: 1000 }}
+                autoplay={{ delay: 2000 }}
                 navigation={{
                   nextEl: ".custom-swiper-next",
                   prevEl: ".custom-swiper-prev",
@@ -193,7 +193,7 @@ const AboutUS = () => {
               </Swiper>
 
               {/* Navigation Buttons - Use Custom Class Names */}
-              <button className="custom-swiper-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-purple text-white p-3 rounded-full shadow-md hover:bg-yellow transition duration-300">
+              <button className="custom-swiper-prev absolute left-0 top-1/2 transform -translate-y-1/2  bg-purple text-white p-3 rounded-full shadow-md hover:bg-yellow transition duration-300">
                 <FaArrowLeft className="text-lg" />
               </button>
               <button className="custom-swiper-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-purple text-white p-3 rounded-full shadow-md hover:bg-yellow transition duration-300">

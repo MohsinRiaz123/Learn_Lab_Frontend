@@ -8,7 +8,7 @@ import { FaGraduationCap } from "react-icons/fa6";
 const LandingFooter = () => {
   return (
     <div className=" ">
-    <div className=" text-gray-500 font-semibold  space-x-14 space-y-18 bg-blue md:grid grid-cols-2 lg:grid-cols-4 p-14 ">
+    <div className=" text-gray-500 font-semibold  space-x-14 space-y-18 bg-blue md:grid grid-cols-2 lg:grid-cols-4 pt-14 px-14 ">
       <div className="">
         <div className="flex items-center">
           <p className="text-purple text-6xl">
@@ -45,7 +45,7 @@ const LandingFooter = () => {
         <p className="text-white text-xl">Our Company</p>
         <div className="bg-purple h-1 w-8 rounded-full mt-3"></div>
         <div className=" mt-4 space-y-2 flex flex-col">
-          <a href="/" className=" hover:text-white">
+          <a href="/contact" className=" hover:text-white">
             Contact Us
           </a>
           <a href="/about" className=" hover:text-white">
