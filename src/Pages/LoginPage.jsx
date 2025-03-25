@@ -75,8 +75,11 @@ const LoginPage = () => {
                     component="div"
                     className="text-red-500 text-sm"
                   />
-                </div>
 
+                </div>
+<div className="flex item-center justify-end">
+  <a href="/forgotPassword" className="text-purple underline">Forgot Password?</a>
+</div>
                 <button
                   type="submit"
                   disabled={isSubmitting}
