@@ -5,6 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const validationSchema = Yup.object({
   email: Yup.string().email("Invalid email").required("Email is required"),
@@ -12,7 +13,14 @@ const validationSchema = Yup.object({
     .min(6, "Password must be at least 6 characters")
     .required("Password is required"),
 });
+
+
 const LoginPage = () => {
+  const navigate =useNavigate()
+const handleLogin = () => {
+  //  add login logic here
+  navigate("/student");
+};
   return (
     <div>
       <LandingNavbar />
@@ -75,14 +83,16 @@ const LoginPage = () => {
                     component="div"
                     className="text-red-500 text-sm"
                   />
-
                 </div>
-<div className="flex item-center justify-end">
-  <a href="/forgotPassword" className="text-purple underline">Forgot Password?</a>
-</div>
+                <div className="flex item-center justify-end">
+                  <a href="/forgotPassword" className="text-purple underline">
+                    Forgot Password?
+                  </a>
+                </div>
                 <button
                   type="submit"
                   disabled={isSubmitting}
+                  onClick={handleLogin}
                   className=" w-full shadow-lg shadow-blue hover:shadow-none flex items-center justify-center rounded-full bg-yellow   mt-10 w-fit py-3 font-semibold  hover:bg-purple text-black hover:text-white  transition delay-100 duration-150 ease-in-out hover:-translate-y-1 hover:scale-100 "
                 >
                   {isSubmitting ? "Submitting..." : "Sign In"}
