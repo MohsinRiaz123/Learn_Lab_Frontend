@@ -52,7 +52,7 @@ const StudentDashboardLayout = () => {
             <div>
               <h2 className="text-xl font-semibold ">{info.name}</h2>
               <p className="mt-1 text-sm">
-                📘 {info.enrolled} Courses Enrolled | 🎓 {info.certificate}{" "}
+                 {info.enrolled} Courses Enrolled |  {info.certificate}{" "}
                 Certificate
               </p>
             </div>
