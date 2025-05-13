@@ -19,7 +19,8 @@ const LoginPage = () => {
   const navigate =useNavigate()
 const handleLogin = () => {
   //  add login logic here
-  navigate("/student");
+  // navigate("/student");
+  navigate("/instructor");
 };
   return (
     <div>

@@ -20,12 +20,12 @@ const Setting = () => {
 
   const [profile, setProfile] = useState({
     registrationDate: "February 28, 2026 8:01 am",
-    firstName: "Emily",
-    lastName: "Hannah",
-    username: "Learner",
+    firstName: "Zoya",
+    lastName: "Bilal",
+    username: "instructor",
     email: "example@gmail.com",
     phone: "+1-202-555-0174",
-    occupation: "Application Developer",
+    occupation: "Web Developer",
     bio: `I'm the Front-End Developer for #ThemeGenix in New York, OR. I have a serious passion for UI effects, animations, and creating intuitive, dynamic user experiences.`,
   });
 
