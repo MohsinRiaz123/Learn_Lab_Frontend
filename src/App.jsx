@@ -21,6 +21,16 @@ import InsQuizAttempts from "./Pages/Instructor/QuizAttempt";
 import InsEnrolledCourses from "./Pages/Instructor/EnrolledCourses";
 import InsSetting from "./Pages/Instructor/Setting";
 import CreateCourse from "./Pages/Instructor/CreateCourse";
+import { Sidebar } from "./Components/sidebar"
+import Dashboard from "./Pages/Dashboard"
+import Profile from "./Pages/Profile"
+import Projects from "./Pages/Projects"
+import Messages from "./Pages/Messages"
+import Courses from "./Pages/Courses"
+import Feedback from "./Pages/Feedback"
+import Recommendations from "./Pages/Recommendations"
+import Settings from "./Pages/Settings"
+import "./App.css"
 function App() {
   return (
     <Router>
@@ -58,6 +68,25 @@ function App() {
             <Route path="createCourse" element={<CreateCourse/>} />
           
           </Route>
+
+ <div className="flex min-h-screen bg-gray-50">
+        <Sidebar />
+        <main className="flex-1 p-6 overflow-y-auto">
+          <div className="mx-auto max-w-7xl">
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/messages" element={<Messages />} />
+              <Route path="/courses" element={<Courses />} />
+              <Route path="/feedback" element={<Feedback />} />
+              <Route path="/recommendations" element={<Recommendations />} />
+              <Route path="/settings" element={<Settings />} />
+            </Routes>
+          </div>
+        </main>
+      </div>
+
         </Routes>
       </div>
     </Router>
